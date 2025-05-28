@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="marque.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #f0f9ff;
+      color: #333;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    header {
+      background-color: #b17ccf;
+      color: white;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    #marquesina {
+      width: 100%;
+      background-color: #132b6d;
+      color: white;
+      font-size: 1.2rem;
+      padding: 30px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #mensaje {
+      position: absolute;
+      white-space: nowrap;
+      animation: mover 12s linear infinite;
+    }
+
+    @keyframes mover {
+      from { left: 100%; }
+      to { left: -100%; }
+    }
+
+    nav {
+      background-color: #39358d;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #f4f3f3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding: 8px 12px;
+    }
+
+    nav ul li a:hover {
+      color: #ffb703;
+    }
+
+    /* Responsive text */
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
+
+    /* Responsive container */
+    @media (min-width: 768px) {
+      .contenido {
+        max-width: 800px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Igualdad de género</h1>
+    <img src="genero.jpg" alt="Imagen del portafolio">
+  </header>
+
+  <div id="marquesina">
+    <div id="mensaje">¡Bienvenido a mi Portafolio! 🌟</div>
+  </div>
+
+  <div class="contenido">
+    <h2>Nombres de los Alumnos:
+       <br> Erick Miranda Pacheco 
+      <br> Enrique Escudero 
+      <br> Ximena Gamboa Puente 
+      <br>Erick Zermeño 
+      <br>Shaila Basurto Lara 
+    </h2>
+    <h3>Campus: Lomas Verdes</h3>
+    <h3>Docente: MORA GRANADOS BEATRIZ JANET</h3>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="Proyecto 2.html"> Galería</a></li>
+      <li><a href="Proyecto 1.html">Proyecto 2</a></li>
+      <li><a href="botones.html">Juego de roles</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

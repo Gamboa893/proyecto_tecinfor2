@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto 1</title>
+  <link rel="stylesheet" href="Proyecto 1 Estilo.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Marquesina */
+    #marquesina {
+      width: 100%;
+      background-color: #051950;
+      color: white;
+      font-size: 1.5rem;
+      padding: 50px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #mensaje {
+      position: absolute;
+      white-space: nowrap;
+      animation: mover 7s linear infinite;
+    }
+
+    @keyframes mover {
+      from { left: 100%; }
+      to { left: -100%; }
+    }
+
+    /* Navegación */
+    nav {
+      background-color: #238fce;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #f4f3f3;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffb703;
+    }
+
+    header {
+      background-color: #5a9b0f;
+      color: white;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      #marquesina {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Marquesina -->
+  <div id="marquesina">
+    <div id="mensaje">Bienvenido al Proyecto 1</div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Proyecto 2.html">Galeria</a></li>
+      <li><a href="Proyecto 1.html">Proyecto 2</a></li>
+      <li><a href="#">Proyecto 3</a></li>
+    </ul>
+  </nav>
+  <h1>galeria de igualdad de género</h1>
+<div class=".galeria">
+    <img src="ig.jpg" alt="Imagen 1">
+    <img src="ig2.jpg" alt="Imagen 2">
+    <img src="ig3.jpg" alt="Imagen 3">
+    <img src="ig4.jpg" alt="Imagen 4">
+    <img src="ig5.jpg" alt="Imagen 5">
+  </div>
+  
+ 
+</body>
+</html>
